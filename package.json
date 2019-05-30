@@ -2,7 +2,7 @@
   "name": "electron-build-app",
   "productName": "Electron build app",
   "description": "testing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

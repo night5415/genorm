@@ -1,0 +1,57 @@
+:root {
+    --main-bg-color:lightseagreen;
+}
+body, html {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+    overflow: hidden;
+}
+input[type=button]{
+    color:#fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2px;
+    padding:5px;
+    background-color: var(--main-bg-color);
+}
+#cmdOutput {
+    height:calc(100vh - 70px); 
+    background-color: aliceblue;
+    overflow: hidden;
+    overflow-y: scroll;
+    min-height: 150px;
+    scroll-behavior: smooth;
+    padding: 1em;
+}
+#cmdControl{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    text-align: left;
+    color: #fff; 
+    font-family: sans-serif;
+    font-size: 1.3em;
+    border-radius: 6px 6px 0 0; 
+    background-color: var(--main-bg-color); 
+}
+.draggable {
+    padding: 10px 20px;
+    -webkit-app-region: drag;
+}
+.container {
+    position: relative;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}
+.output-clr{ 
+    position: absolute;
+    bottom:35px;
+    right:50px;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    right: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+}

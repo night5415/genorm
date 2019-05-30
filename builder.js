@@ -15,11 +15,12 @@ function getInstallerConfig() {
 
     return Promise.resolve({
         appDirectory: path.join(outPath, 'Electron-tutorial-app-win32-ia32/'),
-        authors: 'Christian Engvall',
+        authors: 'Michael Meloy',
+        setupMsi: 'my-installer',
         noMsi: true,
         outputDirectory: path.join(outPath, 'windows-installer'),
         exe: 'electron-tutorial-app.exe',
-        setupExe: 'ElectronTutorialAppInstaller.exe',
+        setupExe: 'My-Installer.exe',
         setupIcon: path.join(rootPath, 'assets', 'icons', 'icon.ico')
     })
 }
