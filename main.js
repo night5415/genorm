@@ -91,7 +91,7 @@ app.on('activate', () => {
 
 //custom code  
 ipc.on('close-win', function (event, arg) {
-    win.close();
+    win.hide();
 })
 
 function runGenOrm() {
